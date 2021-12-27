@@ -35,6 +35,10 @@ h1 {
   font-size: 3.5rem;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -71,9 +75,15 @@ p {
   color: $secondary-text;
   background: $black;
   border-radius: 5px;
+  text-align: center;
 
   .semi-bold {
     color: $white;
+  }
+
+  &.small {
+    width: auto;
+    padding: 1em 1.5em;
   }
 }
 
@@ -134,5 +144,16 @@ header {
 }
 
 // Section: About
+section#about {
+  padding: 4.5em 0 3.75em;
+
+  .about-img {
+    line-height: 0;
+  }
+
+  .about-desc {
+    margin-top: 3em;
+  }
+}
 
 // Footer
