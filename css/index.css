@@ -74,6 +74,9 @@ p {
   width: auto;
   padding: 1em 1.5em;
 }
+.call-to-action:hover, .call-to-action:focus {
+  background: #1d1d1d;
+}
 
 .dflex {
   display: flex;

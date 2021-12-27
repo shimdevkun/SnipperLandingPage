@@ -4,6 +4,7 @@
 $base-text: #383838;
 $secondary-text: #adadad;
 $black: #000;
+$grey: rgb(29, 29, 29);
 $white: #fff;
 
 // Defaults
@@ -84,6 +85,11 @@ p {
   &.small {
     width: auto;
     padding: 1em 1.5em;
+  }
+
+  &:hover,
+  &:focus {
+    background: $grey;
   }
 }
 
