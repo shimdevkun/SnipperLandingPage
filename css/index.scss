@@ -145,7 +145,7 @@ header {
 
 // Section: About
 section#about {
-  padding: 4.5em 0 3.75em;
+  padding: 4.5em 0 1.5em;
 
   .about-img {
     line-height: 0;
@@ -157,3 +157,13 @@ section#about {
 }
 
 // Footer
+footer {
+  color: $base-text;
+  padding: 2em 0;
+
+  .policies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+}

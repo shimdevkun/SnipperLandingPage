@@ -121,11 +121,21 @@ header section#hero .hero-img {
 }
 
 section#about {
-  padding: 4.5em 0 3.75em;
+  padding: 4.5em 0 1.5em;
 }
 section#about .about-img {
   line-height: 0;
 }
 section#about .about-desc {
   margin-top: 3em;
+}
+
+footer {
+  color: #383838;
+  padding: 2em 0;
+}
+footer .policies {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
 }
