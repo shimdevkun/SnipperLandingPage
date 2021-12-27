@@ -1,1 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: #383838;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.call-to-action {
+  display: inline-block;
+  width: 100%;
+  padding: 1em 0;
+  color: #adadad;
+  background: #000;
+  border-radius: 5px;
+}
+.call-to-action .semi-bold {
+  color: #fff;
+}
+
+.dflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  padding: 0.5em 0;
+  background: #fff;
+  text-align: center;
+  color: #383838;
+  border-radius: 5px;
+}
+
+header {
+  background-image: url("../Assets/Background.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1em 0 0;
+}
+header nav #menu-icon {
+  cursor: pointer;
+}
+header nav #nav-actions {
+  position: relative;
+}
+header nav #nav-actions ul li + li {
+  margin-top: 1.25em;
+}
+header nav #nav-actions ul li img {
+  cursor: pointer;
+}
+header section#hero {
+  text-align: center;
+}
+header section#hero .hero-img {
+  line-height: 0;
+}
