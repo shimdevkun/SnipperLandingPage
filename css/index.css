@@ -61,7 +61,7 @@ p {
 .call-to-action {
   display: inline-block;
   width: 100%;
-  padding: 1em 0;
+  padding: 0.9em 0;
   color: #adadad;
   background: #000;
   border-radius: 5px;
@@ -72,7 +72,7 @@ p {
 }
 .call-to-action.small {
   width: auto;
-  padding: 1em 1.5em;
+  padding: 0.9em 1.35em;
 }
 .call-to-action:hover, .call-to-action:focus {
   background: #1d1d1d;
@@ -141,4 +141,65 @@ footer .policies {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5em;
+}
+
+@media screen and (min-width: 600px) {
+  .call-to-action {
+    width: auto;
+    padding: 0.9em 1.35em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav #menu {
+    display: none;
+  }
+  nav #nav-actions {
+    display: block;
+  }
+  nav #nav-actions .dropdown {
+    position: initial;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+  nav #nav-actions .dropdown .container {
+    width: 100%;
+  }
+  nav #nav-actions .dropdown .container ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  nav #nav-actions .dropdown .container ul li + li {
+    margin-left: 1.35em;
+    margin-top: 0;
+  }
+
+  section#hero {
+    margin-top: 3em;
+  }
+  section#hero .hero-img {
+    margin-top: 6.75em;
+    height: 425px;
+    overflow: hidden;
+  }
+
+  section#about .about-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .container .policies {
+    margin-top: 0;
+  }
+  footer .container .policies a + a {
+    margin-left: 1.35em;
+  }
 }

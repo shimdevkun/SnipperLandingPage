@@ -71,7 +71,7 @@ p {
 .call-to-action {
   display: inline-block;
   width: 100%;
-  padding: 1em 0;
+  padding: 0.9em 0;
 
   color: $secondary-text;
   background: $black;
@@ -84,7 +84,7 @@ p {
 
   &.small {
     width: auto;
-    padding: 1em 1.5em;
+    padding: 0.9em 1.35em;
   }
 
   &:hover,
@@ -171,5 +171,83 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5em;
+  }
+}
+
+// Media Queries
+@media screen and (min-width: 600px) {
+  // Utilities
+  .call-to-action {
+    width: auto;
+    padding: 0.9em 1.35em;
+  }
+
+  // Header: nav
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    #menu {
+      display: none;
+    }
+
+    #nav-actions {
+      display: block;
+
+      .dropdown {
+        position: initial;
+        padding: 0;
+        background: none;
+        border: none;
+
+        .container {
+          width: 100%;
+
+          ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            li + li {
+              margin-left: 1.35em;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Header: hero
+  section#hero {
+    margin-top: 3em;
+
+    .hero-img {
+      margin-top: 6.75em;
+      height: 425px;
+      overflow: hidden;
+    }
+  }
+
+  // About
+  section#about {
+    .about-img {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  // Footer
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+
+    .policies {
+      margin-top: 0;
+
+      a + a {
+        margin-left: 1.35em;
+      }
+    }
   }
 }
