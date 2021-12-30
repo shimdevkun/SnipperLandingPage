@@ -194,6 +194,9 @@ footer .policies a:focus {
     height: 425px;
     overflow: hidden;
   }
+  section#hero .hero-img img {
+    width: 100%;
+  }
 
   section#about .about-img {
     width: 70%;
@@ -209,5 +212,35 @@ footer .policies a:focus {
   }
   footer .container .policies a + a {
     margin-left: 1.35em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 78%;
+  }
+
+  nav {
+    margin-top: 1.5em;
+  }
+
+  section#hero .hero-img {
+    margin-top: 4.5em;
+    height: 400px;
+  }
+
+  section#about {
+    padding-bottom: 3em;
+  }
+  section#about .container {
+    display: flex;
+  }
+  section#about .container .about-desc {
+    margin-top: 0;
+    width: 60%;
+  }
+  section#about .container .about-img {
+    order: 1;
+    margin-left: 4.5em;
+    width: 40%;
   }
 }
