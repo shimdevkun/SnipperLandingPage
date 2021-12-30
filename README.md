@@ -2,15 +2,23 @@
 
 Personal solution for the "Snipper Landing Page" challenge by Codewell
 
-[Live version](#)
+[Live version](https://snipper-landing-page.shimdevkun.vercel.app/)
 
 ## Technologies Used
 
+- HTML
+- CSS / SCSS
+- JavaScript
+
 ## Results
 
-### Desktop Version
+|         Mobile          |         Tablet          |
+| :---------------------: | :---------------------: |
+| ![](results/mobile.png) | ![](results/tablet.png) |
 
-### Mobile Version
+|         Desktop          |
+| :----------------------: |
+| ![](results/desktop.png) |
 
 ## See also
 
